@@ -8,7 +8,7 @@ with sr.Microphone() as source:
 
 try:
    print("Google Speech Recognition thinks you said:")
-   print(r.recognition_google(audio, language="zh_TW"))
+   print(r.recognize_google(audio, language="zh_TW"))
 except sr.UnknownValueError:
 	print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
